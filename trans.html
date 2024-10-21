@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .A{
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            justify-content: space-evenly;
+        
+        }
+        .s,.s1,.s2,.s3{
+            border: 1px solid black;
+            padding: 5%;
+            margin-bottom: 4px;
+            text-align: center;
+        }
+        .s:hover ~.a{
+            
+            background-color: beige;
+            color: black;
+            transform:scale(0.9);
+        }
+        .s1:hover ~.b{
+            
+            background-color: rgb(134, 134, 77);
+            color: black;
+            transform: rotate(45deg);
+        }
+        .s2:hover ~.c{
+            
+            background-color: rgb(134, 134, 77);
+            color: black;
+            transform: skew(45deg);
+        }
+        
+        .a{
+            height: 200px;
+            width: 130px;
+            background-color: blue;
+            border: 2px solid;
+            transition: all 1s ease-in;
+
+        }
+        
+        .b{
+            height: 200px;
+            width: 130px;
+           background-color: black;
+            border: 2px solid;    
+        }
+    
+        .c{
+            height: 200px;
+            width: 130px;
+            background-color: blue;
+            border: 2px solid;
+            transition: all 2s ease-out;
+
+        }
+        
+        .d{
+            height: 200px;
+            width: 130px;
+            background-color:green;
+            border: 2px solid;
+            transition: all 1s ease-in;
+        }
+        .s3:hover ~.d{
+            
+            background-color: rgb(134, 134, 77);
+            color: black;
+            transform: translate(50px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class ="A">
+    <div class ="ss">
+        <div class ="s">scale</div>
+        <div class ="a"></div>
+    </div>
+    <br>
+    <br>
+    <div class ="ss">
+        <div class ="s1">rotate</div>
+    <div class ="b"></div>
+    </div>
+    <br>
+    <br>
+    <div class ="ss">
+        <div class ="s2">Skew</div>
+    <div class ="c"></div>
+    </div>
+    <div class ="ss">
+        <div class ="s3">translate</div>
+        <div class ="d"></div>
+    </div>
+    </div>
+</body>
+</html>

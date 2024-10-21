@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .A{
+            display: flex;
+            justify-content: center;
+            text-align:center;
+        }
+        .a{
+            height :20px;
+            width: 30px;
+            border: 2px solid;
+            border-radius: 100%;
+            margin: 10px;
+            background-color : black;
+            animation-name: my;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-direction: normal;
+
+    }
+    @keyframes my{
+        0%{
+            transform: translateY(0px,200px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    .b{
+            height: 20px;
+            width: 30px;
+            border: 2px solid;
+            border-radius: 100%;
+            margin: 10px;
+            background-color: black;
+            animation-name: my;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction: normal;
+
+    }
+    @keyframes my{
+        0%{
+            transform: translateY(0px,200px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    .c{
+            height: 20px;
+            width: 30px;
+            border: 2px solid;
+            border-radius: 100%;
+            background-color: black;
+            margin: 10px;
+            animation-name: my;
+            animation-duration: 9s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-delay: .6s;
+            animation-direction: reverse;
+
+    }
+    @keyframes my{
+        0%{
+            transform: translateY(200px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    .b{
+        height: 20px;
+        width: 30px;
+        border: 2px solid;
+        border-radius: 100%;
+        background-color: black;
+    }
+    .c{
+        height: 20px;
+        width: 30px;
+        border: 2px solid;
+        border-radius: 100%;
+        background-color: black;
+    }
+    </style>
+</head>
+<body>
+    <div class ="A">
+    <div class ="a"></div>
+    <br>
+    <div class ="b"></div>
+    <br>
+    <div class ="c"></div>
+    </div>
+</body>
+</html>
